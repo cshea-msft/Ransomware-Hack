@@ -9,7 +9,7 @@ resource "azurerm_resource_group_template_deployment" "rg_template_deployment" {
       value = azurerm_log_analytics_workspace.law.name
     }
   })
-  template_content = templatefile("${path.module}/templates/analytics_rules.json", )
+  template_content = file("${path.module}/templates/alerts.json")
 }
 */
 
