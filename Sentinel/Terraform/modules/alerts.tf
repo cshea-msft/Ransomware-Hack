@@ -75,7 +75,7 @@ resource "azurerm_sentinel_alert_rule_ms_security_incident" "CAS" {
 
 // Create Sentinel MS Security Incident Alert Rule for Office 365 Advanced Threat Protection
 resource "azurerm_sentinel_alert_rule_ms_security_incident" "O365_ATP" {
-  name                       = "ms_security_incident_alert_rule"
+  name                       = "ms_security_incident_alert_rule_o365_oatp"
   log_analytics_workspace_id = azurerm_log_analytics_workspace.law.id
   product_filter             = "Office 365 Advanced Threat Protection"
   display_name               = "MS Security Incident Alert Rule - o365"
