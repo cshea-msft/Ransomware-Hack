@@ -54,7 +54,7 @@ resource "azurerm_sentinel_alert_rule_ms_security_incident" "AATP" {
   name                       = "ms_security_incident_alert_rule_aatp"
   log_analytics_workspace_id = azurerm_log_analytics_workspace.law.id
   product_filter             = "Azure Advanced Threat Protection"
-  display_name               = "MS Security Incident Alert Rule"
+  display_name               = "MS Security Incident Alert Rule - AATP"
   severity_filter            = ["High"]
   depends_on = [
     azurerm_sentinel_log_analytics_workspace_onboarding.law_onboarding
