@@ -35,6 +35,7 @@ module dataConnectors './Modules/connectors.bicep' = {
   name: 'dataConnectorsDeployment'
   params: {
     lawName: lawName
+    lawId: law.outputs.resourceId
   }
   scope: resourceGroup(resourceGroupName)
   dependsOn: [
