@@ -128,3 +128,5 @@ resource mlad_alert_rule 'Microsoft.SecurityInsights/alertRules@2023-02-01-previ
   }
 }
 
+
+// Create Sentinel Scheduled Alert Rule -- Missing

@@ -57,6 +57,20 @@ module alerts './Modules/alerts.bicep' = {
 }
 
 
+//Create Analytics
+module analytics './Modules/analytics.bicep' = {
+  name: 'analyticsDeployment'
+  params: {
+    lawName: lawName
+    resourceGroupName: resourceGroupName
+    tags: tags
+  }
+  scope: resourceGroup(resourceGroupName)
+  dependsOn: [
+    alerts
+  ]
+}
+
 
 //Outputs
 output lawId string = law.outputs.resourceId
