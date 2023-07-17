@@ -1,7 +1,7 @@
 // Create Log Analytics Workspace and Log Analytics Solution for Sentinel
 
 resource "azurerm_log_analytics_workspace" "law" {
-  name                = "law-${var.prefix}-${var.resource_location}-1"
+  name                = "sentinel-law-${var.prefix}-${var.location}"
   location            = azurerm_resource_group.rg_law.location
   resource_group_name = azurerm_resource_group.rg_law.name
   sku                 = "PerGB2018"

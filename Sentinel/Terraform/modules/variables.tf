@@ -1,11 +1,11 @@
 // Create Azure Resource Group variables 
 
-variable "resource_location" {
+variable "location" {
   description = "The location of the resource group."
   type        = string
 }
 
-variable "resource_tags" {
+variable "tags" {
   description = "The tags of the resource up."
   type        = map(string)
 }

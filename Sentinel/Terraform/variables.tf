@@ -3,12 +3,12 @@ variable "prefix" {
   type        = string
 }
 
-variable "resource_location" {
+variable "location" {
   description = "The location of the resource."
   type        = string
 }
 
-variable "resource_tags" {
+variable "tags" {
   description = "The tags of the resource."
   type        = map(string)
 }

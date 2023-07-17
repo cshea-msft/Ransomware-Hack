@@ -5,7 +5,7 @@ resource "azurerm_resource_group_template_deployment" "rg_template_deployment" {
   deployment_mode     = "Incremental"
   parameters_content = jsonencode({
     "workspace" = {
-      value = azurerm_log_analytics_workspace.law.name
+      value = azurerm_log_analytics_workspace.law.id
     }
   })
   template_content = file("${path.module}/alerts.json")
