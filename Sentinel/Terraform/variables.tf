@@ -18,6 +18,11 @@ variable "sub_id" {
   type        = string
 }
 
+variable "tenant_id" {
+  description = "The tenant id of the resource."
+  type        = string
+}
+
 /*
 variable "api_root_url" {
   description = "The root url of the api."

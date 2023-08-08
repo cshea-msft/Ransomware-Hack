@@ -19,6 +19,12 @@ variable "sub_id" {
   description = "The subscription id of the resource group."
   type        = string
 }
+variable "tenant_id" {
+  description = "The tenant id of the resource group."
+  type        = string
+}
+  
+
 /*
 // Threat Intelligence Taxii Variables
 variable "api_root_url" {

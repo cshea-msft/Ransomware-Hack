@@ -1,3 +1,5 @@
+/*
+
 // Create a Resource Group Template Deployment for Alerts.JSON
 resource "azurerm_resource_group_template_deployment" "rg_template_deployment" {
   name                = "rg_template_deployment"
@@ -10,3 +12,5 @@ resource "azurerm_resource_group_template_deployment" "rg_template_deployment" {
   })
   template_content = file("${path.module}/alerts.json")
 }
+
+*/
